@@ -12,7 +12,8 @@ import {
 } from "@/lib/video-pipeline";
 
 export const runtime = "nodejs";
-export const maxDuration = 600;
+// Vercel Hobby plan caps Serverless Function duration at 300s.
+export const maxDuration = 300;
 
 type AgentToolCall = {
   id: string;
