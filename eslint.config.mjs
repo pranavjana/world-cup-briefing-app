@@ -12,6 +12,8 @@ const eslintConfig = defineConfig([
     "out/**",
     "build/**",
     "next-env.d.ts",
+    // Local diagnostic scripts (plain CJS, not part of the app build).
+    "scripts/**",
   ]),
 ]);
 
